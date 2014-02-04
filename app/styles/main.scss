@@ -49,9 +49,9 @@ body {
 
 
 //Registration Form  Begins//
-.registration-form {
+.registrationForm {
     width: 300px;
-    height: 684px;
+    height: 780px;
     margin: 40px auto;         
     background-color: rgb(170, 204, 204);
     display: hidden;
@@ -63,18 +63,22 @@ body {
     font-size: 18px;
     padding-top: 10px;
 }
-.input-name, .input-address, .input-city, .input-state, .input-zipCode,
-.input-email, .input-vehicleYear, .input-vehicleMake, .input-vehicleModel {
+.input-name, .input-mailAddress, .input-city, .input-state, .input-zipCode,
+.input-email, .input-vehicleYear, .input-vehicleMake, .input-vehicleModel, .shirtSize, .photo {
     font-size: 18px;
     margin-left: 8px;
 }
-.name, .address, .city, .state, .zipCode, .email, 
+.name, .mailAddress, .city, .state, .zipCode, .email, 
 .vehicleYear, .vehicleMake, .vehicleModel {
     width: 278px;
     height: 26px;
     margin-left: 8px;
     font-size: 18px;
     box-shadow: inset 0 1px 2px black;
+}
+.sizeSelect {
+    margin-left: 8px;
+    margin-top: 8px;
 }
 .city {
     width: 160px;
@@ -97,7 +101,7 @@ body {
     text-align: center;
     box-shadow: 1px 1px 1px black;
     margin-top: 12px;
-    margin-left: 8px;  
+    margin-left: 190px;  
     background-color: rgb(136, 170, 170);
 }
 //PreRegistered Users Begin//

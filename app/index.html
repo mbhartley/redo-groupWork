@@ -41,29 +41,37 @@
 
 
 <!--Registration Form Begins-->
-        <div class="registration-form">
-        <div class="input-instructions">Thank you for your interest in the 3rd annual Junkyard Auto Show. Please fill out the following form completely and accurately:
-        </div>
+        <form class="registrationForm">
+        
         <div class="input-name">First and Last Name</div>
-        <input class="name" type="text" value="">
-        <div class="input-address">Street Address</div>
-        <input class="address" type="text" value="">
+        <input class="name" type="text" name="name">
+        <div class="input-mailAddress">Street Address</div>
+        <input class="mailAddress" type="text" name="mailAddress">
         <div class="input-city">City</div>
-        <input class="city" type="text" value="">
+        <input class="city" type="text" name="city">
         <div class="input-state">State</div>
-        <input class="state" type="text" value="">
+        <input class="state" type="text" name="state" maxlength=2>
         <div class="input-zipCode">Zip Code</div>
-        <input class="zipCode" type="text" value="">
+        <input class="zipCode" type="text" name="zipCode" maxlength=5>
         <div class="input-email">Email Address</div>
-        <input class="email" type="text" value="">
+        <input class="email" type="text" name="email">
         <div class="input-vehicleYear">Vehicle Year</div>
-        <input class="vehicleYear" type="text" value="">
+        <input class="vehicleYear" type="text" name="vehicleYear" maxlength=4>
         <div class="input-vehicleMake">Vehicle Make</div>
-        <input class="vehicleMake" type="text" value="">
+        <input class="vehicleMake" type="text" name="vehicleMake">
         <div class="input-vehicleModel">Vehicle Model</div>
-        <input class="vehicleModel" type="text" value="">
-        <div class="registration-submit">Submit</div>
-        </div>
+        <input class="vehicleModel" type="text" name="vehicleModel">
+        <div class="shirtSize"> Select Your T-shirt Size</div>
+        <select name="sizeSelect">
+          <option value="1"> small</option>
+          <option value="2"> medium</option>
+          <option value="3"> large</option>
+          <option value="3"> x-large</option>
+        </select>
+        <div class="photo">Upload a Photo of Your Vehicle</div>
+        <input type="file" name="vehiclePhoto"></input>
+        <input type="submit"></input>
+        </form>
 <!--PreRegistered Users Begin-->
             
             <div class="registered-users">
@@ -125,10 +133,18 @@
                     </div>
                   </div>
                   </div>
-               </div>
-<!--PreRegistered Users Begin-->
+            </div>
+<!--PreRegistered Users Ends-->
 
-       
+<script class="RegistrantTemplate" type="text/template">
+            <div class="new-register">
+                 <img class="car-image"src="<%= data.image %>">
+                 <div class="name"><%= data.name %></div>
+                 <div class="year"><%= data.year %></div>
+                 <div class="make"><%= data.make %></div>
+                 <div class="model"><%= data.model %></div>
+            </div>
+        </script>       
 
 
 
@@ -136,6 +152,7 @@
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
         <script src="bower_components/jquery/jquery.js"></script>
+        <script src="bower_components/underscore/underscore.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
