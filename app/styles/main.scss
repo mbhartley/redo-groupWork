@@ -100,7 +100,45 @@ body {
     margin-left: 8px;  
     background-color: rgb(136, 170, 170);
 }
+//PreRegistered Users Begin//
+.announce-participants {
+    font-size: 32px;
+    font-weight: 600px;
+    margin-top: 40px;
+    color: rgb(107, 49, 51);
+    text-align: center;
+}
+.registered-users {
+    width: 960px;
+    position: relative;
+    margin: 0 auto;
+    z-index: 0;
+}
+.new-register {
+    width: 316px;
+    height: 250px;
+    font-family: open sans;
+    margin-top: 60px;
+    display: inline-block;
+}
+.reg-vehicle-info {
+    margin: 0 auto;
+    position: relative;
+}
+.reg-name {
+    font-size: 20px;
+}
 
+.reg-year, .reg-make, .reg-model {
+    display: inline-block;
+    font-size: 20px;
+}
+.car-image {
+    width: 280px;
+    height: 200px;
+    box-shadow: 2px 2px 2px rgb(38, 38, 38);
+}
+//PreRegistered Users Ends//
 
 
 
