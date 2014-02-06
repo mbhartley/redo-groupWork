@@ -1,0 +1,1 @@
+$(".registrationForm").hide(),$(".reg-tab").click(function(){$(".registrationForm").toggle()}),$(".submit-button").click(function(){$(".registrationForm").toggle()});var regForm=$("form").serializeArray();regForm.forEach(function(){var a=$('<div class ="reg-name">'+regForm.name+"</div>");$("body").append(a)});
