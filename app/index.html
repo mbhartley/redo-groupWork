@@ -6,7 +6,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>redo groupWork</title>
+        <title>GroupPro CarShow</title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width">
         <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
@@ -17,128 +17,176 @@
         <!-- endbuild -->
         <!-- build:css(.tmp) styles/main.css -->
         <link rel="stylesheet" href="styles/main.css">
+        <link href='http://fonts.googleapis.com/css?family=Bowlby+One' rel='stylesheet' type='text/css'>
         <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+
         <!-- endbuild -->
     </head>
     <body>
         <!--[if lt IE 10]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+
         <div class="header">
             <div class="container">
-            <div class="logo">The Junkyard Auto Show
-            </div>
-            <ul class="nav-bar">
-                <li class="reg-tab">Register Your Vehicle</li>
-                <li clas="sponser-tab">Become a Sponser</li>
-                <li class="details">Details</li>
-            </ul>            
+                <div class="logodiv">
+                    <span class="logo">The Junkyard Car Show</span>
+                    <span class="tagline">Belton, SC Februrary 20, 2014</span>
+                </div>
+                <ul class="tabs">
+                    <li class="reg-tabs">Register Your Vehicle</li>
+                    <li class"=reg-tabs">Register As A Model</li>
+                    <li class"=reg-tabs">Become A Sponsor</li>
+                    <li class="details">Details</li>
+                </ul>
             </div>
         </div>
         <div class="banner">
-            <img src="images/classicvintagecar.jpg">
+            <img src="classicvintagecar.jpg">
         </div>
-
-
-<!--Registration Form Begins-->
-        <form class="registrationForm">
-        <div class="input-name">First and Last Name</div>
-        <input class="name" type="text" name="name"  value="">
-        <div class="input-mailAddress">Street Address</div>
-        <input class="mailAddress" type="text" name="mailAddress">
-        <div class="input-city">City</div>
-        <input class="city" type="text" name="city">
-        <div class="input-state">State</div>
-        <input class="state" type="text" name="state" maxlength=2>
-        <div class="input-zipCode">Zip Code</div>
-        <input class="zipCode" type="text" name="zipCode" maxlength=5>
-        <div class="input-email">Email Address</div>
-        <input class="email" type="text" name="email">
-        <div class="input-vehicleYear">Vehicle Year</div>
-        <input class="vehicleYear" type="text" name="vehicleYear" maxlength=4>
-        <div class="input-vehicleMake">Vehicle Make</div>
-        <input class="vehicleMake" type="text" name="vehicleMake">
-        <div class="input-vehicleModel">Vehicle Model</div>
-        <input class="vehicleModel" type="text" name="vehicleModel">
-        <div class="shirtSize"> Select Your T-shirt Size</div>
-        <select name="sizeSelect">
-          <option value="1"> small</option>
-          <option value="2"> medium</option>
-          <option value="3"> large</option>
-          <option value="3"> x-large</option>
-        </select>
-        <div class="photo">Upload a Photo of Your Vehicle</div>
-        <input type="file" name="vehiclePhoto"></input>
-        <div class="submit-button">Submit</div>
-<!--        <input class="submit-button" type="submit"></input>  -->
-        </form>
-<!--PreRegistered Users Begin-->
-            
-            <div class="registered-users">
-                <div class="container">
-                  <div class="announce-participants">We are proud to welcome the following participants
-                  </div>
-                  <div class="new-register">
-                    <img class = "car-image" src ="images/billy-smith.jpg">       
-                    <div class="reg-name">Billy Smith</div>
-                    <div class="reg-vehicle-info">
-                    <div class="reg-year">1957</div>
-                    <div class="reg-make">Chevrolet</div>
-                    <div class="reg-model">Pickup Truck</div>
-                    </div>
-                  </div>
-                  <div class="new-register">
-                    <img class = "car-image" src ="images/raul-gomez.jpg">        
-                    <div class="reg-name">Raul J. Gomez</div>
-                    <div class="reg-vehicle-info">
-                    <div class="reg-year">1965</div>
-                    <div class="reg-make">Aston Martin</div>
-                    <div class="reg-model">DB8 MKII</div>
-                    </div>
-                  </div>
-                  <div class="new-register">
-                    <img class = "car-image" src ="images/jimmy-lee.jpg">        
-                    <div class="reg-name">Jimmy Lee</div>
-                    <div class="reg-vehicle-info">
-                    <div class="reg-year">1960</div>
-                    <div class="reg-make">Porsche</div>
-                    <div class="reg-model">356 Outlaw Rdstr</div>
-                    </div>
-                  </div>
-                  <div class="new-register">
-                    <img class = "car-image" src ="images/betty-evans.jpg">    
-                    <div class="reg-name">Betty Sue Evans</div>
-                    <div class="reg-vehicle-info">
-                    <div class="reg-year">1968</div>
-                    <div class="reg-make">Chevrolet</div>
-                    <div class="reg-model">Camaro</div>
-                    </div>
-                  </div>
-                  <div class="new-register">
-                    <img class = "car-image" src ="images/hank-harris.jpg">       
-                    <div class="reg-name">Hank R. Harris</div>
-                    <div class="reg-vehicle-info">
-                    <div class="reg-year">1965</div>
-                    <div class="reg-make">Bentley</div>
-                    <div class="reg-model">S3 Continental</div>
-                    </div>
-                  </div>
-                  <div class="new-register">
-                    <img class = "car-image" src ="images/wilma-jenkins.jpg">   
-                    <div class="reg-name">Wilma Jenkins</div>
-                    <div class="reg-vehicle-info">
-                    <div class="reg-year">1958</div>
-                    <div class="reg-make">Ford</div>
-                    <div class="reg-model">Pickup Truck</div>
-                    </div>
-                  </div>
-                  </div>
+        <div class="container-form">
+        <form class="reg-form">
+            <div class="container-inside-form">
+                <div class="field-label">
+                    <div>Full Name</div>
+                    <input type="text" name="Name" size="50" value="">
+                </div>
+                <div class="field-label">
+                    <div>Phone Number</div>
+                    <input type="text" name="Phone" size="12" value="">
+                </div>
+                <div class="field-label">
+                    <div>Email Address</div>
+                    <input type="text" name="Email" size="50" value="">
+                </div>
+                <div class="field-label">
+                    <div>City</div>
+                    <input type="text" name="City" size="50" value="">
+                </div>
+                <div class="field-label">
+                    <div>State</div>
+                    <input type="text" name="State" size="2" value="">
+                </div>
+                <div class="field-label">
+                    <div>Zip Code</div>
+                    <input type="text" name="Zip" size="5" value="">
+                </div>
+                <div class="field-label"> 
+                    <div>Vehicle Year</div>
+                    <input type="text" name="Year" size="10" value="">
+                </div>
+                <div class="field-label"> 
+                    <div>Vehicle Make</div>
+                    <input type="text" name="Make" size="50" value="">
+                </div>
+                <div class="field-label">
+                    <div>Vehicle Model</div>
+                    <input type="text" name="Model" size="50" value="">
+                </div>
+                <div class="field-label">
+                    <div>Image Upload - (cut and paste url)</div>
+                    <input type="" name="Image" size="50" value="">
+                </div>
+                <div class="field-label">
+                    <div>     </div>
+                    <input type="button" class="btn btn-primary btn-large" id="submit-btn" value="Submit Registration">
             </div>
-<!--PreRegistered Users Ends-->
+        </form>
+        </div>
+<!--Register Users Code Begins--> 
+        <div class="containerthree">
+            <div class="announce-participants">We are proud to welcome the following participants</div>
+            <div class="registered-users">
+                <div class="new-register">
+                <img class = "car-image" src ="images/billy-smith.jpg">        
+                    <div class="name">Billy Smith</div>
+                    <div class="vehicle-info">
+                    <div class="year">1957</div>
+                    <div class="make">Chevrolet</div>
+                    <div class="model">Pickup Truck</div>
+                    </div>
+                </div>
+                <div class="new-register">
+                <img class = "car-image" src ="images/raul-gomez.jpg">        
+                    <div class="name">Raul J. Gomez</div>
+                    <div class="vehicle-info">
+                    <div class="year">1965</div>
+                    <div class="make">Aston Martin</div>
+                    <div class="model">DB8 MKII</div>
+                    </div>
+                </div>
+                <div class="new-register">
+                <img class = "car-image" src ="images/jimmy-lee.jpg">        
+                    <div class="name">Jimmy Lee</div>
+                    <div class="vehicle-info">
+                    <div class="year">1960</div>
+                    <div class="make">Porsche</div>
+                    <div class="model">356 Outlaw Rdstr</div>
+                    </div>
+                </div>
+                <div class="new-register">
+                <img class = "car-image" src ="images/betty-evans.jpg">        
+                    <div class="name">Betty Sue Evans</div>
+                    <div class="vehicle-info">
+                    <div class="year">1968</div>
+                    <div class="make">Chevrolet</div>
+                    <div class="model">Camaro</div>
+                    </div>
+                </div>
+                <div class="new-register">
+                <img class = "car-image" src ="images/hank-harris.jpg">        
+                    <div class="name">Hank R. Harris</div>
+                    <div class="vehicle-info">
+                    <div class="year">1965</div>
+                    <div class="make">Bentley</div>
+                    <div class="model">S3 Continental</div>
+                    </div>
+                </div>
+                <div class="new-register">
+                <img class = "car-image" src ="images/wilma-jenkins.jpg">        
+                    <div class="name">Wilma Jenkins</div>
+                    <div class="vehicle-info">
+                    <div class="year">1958</div>
+                    <div class="make">Ford</div>
+                    <div class="model">Pickup Truck</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<!--Register Users Code Ends-->        
+        <div class="footer">
+            <div class="footerinfo">
+                 <ul class="footercontact">
+                    <img class="sponsor-pbr" src="images/pbrlogo.png">
+                     <li class"contactinfo">Contact:</li>
+                    <li>Tele: 864.XXX.XXX</li>
+                     <li>Email: 'merica.fyeah@gmail.com </li>
+                     <li class="address">Address: Pabst Road, Belton SC, 29214</li>
+                     <img class="sponsor-nitro" src="images/nitroenergy.png">
+                </ul>
+
+            </div>
+        </div>
+    
+        
+
+        <script class="RegistrantTemplate" type="text/template">
+            <div class="new-register">
+                 <img class="car-image"src="<%= data.image %>">
+                 <div class="name"><%= data.name %></div>
+                 <div class="year"><%= data.year %></div>
+                 <div class="make"><%= data.make %></div>
+                 <div class="model"><%= data.model %></div>
+            </div>
+        </script>
+
+
+
+
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
-        <script src="bower_components/jquery/jquery.js"></script>
+        <script src="bower_components/jquery/jquery.js"></script>  
         <script src="bower_components/underscore/underscore.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
@@ -153,8 +201,23 @@
             ga('create','UA-XXXXX-X');ga('send','pageview');
         </script>
 
+        <!-- build:js scripts/plugins.js -->
+        <script src="bower_components/sass-bootstrap/js/affix.js"></script>
+        <script src="bower_components/sass-bootstrap/js/alert.js"></script>
+        <script src="bower_components/sass-bootstrap/js/dropdown.js"></script>
+        <script src="bower_components/sass-bootstrap/js/tooltip.js"></script>
+        <script src="bower_components/sass-bootstrap/js/modal.js"></script>
+        <script src="bower_components/sass-bootstrap/js/transition.js"></script>
+        <script src="bower_components/sass-bootstrap/js/button.js"></script>
+        <script src="bower_components/sass-bootstrap/js/popover.js"></script>
+        <script src="bower_components/sass-bootstrap/js/carousel.js"></script>
+        <script src="bower_components/sass-bootstrap/js/scrollspy.js"></script>
+        <script src="bower_components/sass-bootstrap/js/collapse.js"></script>
+        <script src="bower_components/sass-bootstrap/js/tab.js"></script>
+        <!-- endbuild -->
+
         <!-- build:js({app,.tmp}) scripts/main.js -->
         <script src="scripts/main.js"></script>
         <!-- endbuild -->
-</body>
+    </body>
 </html>
